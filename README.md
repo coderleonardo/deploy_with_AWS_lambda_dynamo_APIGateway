@@ -163,5 +163,15 @@ Click on the "/makeprediction" resource, then click on *Actions* to create a **P
 
 And that is it. After you click in **Save** you should see a page with a button called **Test** where you can scrow down to "Request Body" and put the event structure that we are using to test the API.
 
+## References
 
+- https://www.freecodecamp.org/news/how-to-manage-python-dependencies-using-virtual-environments/
+
+- https://docs.aws.amazon.com/lambda/latest/dg/images-create.html#images-create-from-base
+
+- https://docs.docker.com/language/python/build-images/
+
+- https://docs.python.org/3/library/pickle.html#examples
+
+- https://www.deadbear.io/simple-serverless-fastapi-with-aws-lambda/
 
