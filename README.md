@@ -96,7 +96,6 @@ To use the AWS Lambda with AWS ECR we need first create a ECR repository.
 
 Search in the console for ECR (Elastic Container Registry) and click on **Create repository**, then add the repository name in the *private visibility* and click in **Create repository**.
 
-<img src="images/img7_repo.jpeg" alt= “AWSConsole” width="400" height="300" style="text-align:center;">
 
 ##### Push the Docker image to AWS ECR with AWS CLI
 
