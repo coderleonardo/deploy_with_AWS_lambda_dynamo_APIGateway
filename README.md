@@ -10,7 +10,7 @@ For this tutorial we are going to deploy a simple regression model as our main g
 
 ### Preparing the data and saving the model
 
-We are going to intall the *sklearn* library to instatiate our regression model. To so, we need to install the library by running the command: ```pip install -U scikit-learn```. 
+We are going to install the *sklearn* library to instantiate our regression model. To so, we need to install the library by running the command: ```pip install -U scikit-learn```. 
 
 The model that we are going to use is present in the **notebook.ipynb** file. All the steps to prepare the data and to save the model are present in this notebook. Note that we use the *pickle* library to save the model.
 
@@ -28,7 +28,7 @@ Note that the *lambda_function.py* file contains our **predict** function and ma
 
 As we are using the *virtualenv* to track our requirements, we need to pass all the packages that we used to a ```requirements.txt``` file. To do this we run the following command in the directory that we are working: ```pip freeze > requirements.txt```. 
 
-After this, we already to create our *Dockerfile*. 
+After this, we are ready to create our *Dockerfile*. 
 
 The Dockerfile used is present below:
 
@@ -49,7 +49,7 @@ CMD [ "lambda_function.lambda_handler" ]
 
 To build our image we need to run ```docker build -t aws-example .```
 
-After all this, we already to go to the AWS Console and prepare our environment to deploy our model.
+After all this, we can go to the AWS Console and prepare our environment to deploy our model.
 
 ## Working in the AWS Cloud
 
@@ -61,7 +61,7 @@ After this, you should see something like this:
 
 ### Create a table in DynamoDB
 
-Search for the AWS DynamoDB service and go to the **create table** button.
+Search for the AWS DynamoDB service and go to the **Create table** button.
 
 <img src="images/img2_create_table.jpeg" alt= “AWSConsole” width="500" height="300" style="text-align:center;">
 
@@ -104,7 +104,7 @@ Is this step we need to use the AWS CLI to push our Docker image to our ECR repo
 So we need to check if the *AWS CLI* is installed and if not, we need to install.
 To check if is installed we can run ```aws --version```. If is not installed, you can follow the steps described [here](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html) to install or type ```sudo apt  install awscli``` on Ubuntu.
 
-To configure your AWS CLI run ```aws configure```. (If you not set up your AWS Credentials you can do this going to *IAM>Users>YourUerName>Security credentials>Create access key*.)
+To configure your AWS CLI run ```aws configure```. (If you not set up your AWS Credentials you can do this going to *IAM>Users>YourUserName>Security credentials>Create access key*.)
 
 After create your repository, go to this repository and click on **View push commands**.
 
@@ -157,7 +157,7 @@ Now, go to ```Resources > Actions > Create resource``` and follow the example be
 
 <img src="images/img11_API.jpeg" alt= “AWSConsole” width="600" height="300" style="text-align:center;">
 
-Click on the "/makeprediction" resource, then click on *Actions* to create a method to this resource. After this, follow the set up bellow:
+Click on the "/makeprediction" resource, then click on *Actions* to create a **POST** method to this resource. After this, follow the set up bellow:
 
 <img src="images/img12_API.jpeg" alt= “AWSConsole” width="600" height="300" style="text-align:center;">
 
